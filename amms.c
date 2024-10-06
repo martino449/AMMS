@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <amms.h>
 typedef struct {
     void* data;
     size_t size;
