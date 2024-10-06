@@ -14,7 +14,7 @@
 - `create_object(size_t size)`: Create a new managed object with the specified size.
 - `borrow_immutable(ManagedObject* obj)`: Borrow an object immutably (read-only access).
 - `borrow_mutable(ManagedObject* obj)`: Borrow an object mutably (read and write access).
-- `return_object(ManagedObject* obj)`: Return the borrowed object, updating reference counts.
+- `return_object(ManagedObject* obj)`: Return the borrowed object, updating reference counts and frees it if the references reach 0.
 - `destroy_object(ManagedObject* obj)`: Clean up and free the object's memory when it is no longer needed.
 
 ## Example Usage
@@ -37,7 +37,7 @@ int main() {
     return_object(obj);
 
     // Destroy the object when done
-    destroy_object(obj);
+    return_object(obj);
 
     return 0;
 }
@@ -45,8 +45,8 @@ int main() {
 
 ## Getting Started
 
-To use AMMS in your project, simply include the header file and link against the provided implementation. Detailed usage examples can be found in the [Documentation](DOCUMENTATION).
+To use AMMS in your project, simply include the header file and link against the provided implementation. Detailed usage examples can be found in the [Documentation](https://github.com/martino449/AMMS/blob/main/Getting_Started.md).
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/martino449/AMMS/edit/main/LICENSE).
