@@ -1,4 +1,4 @@
-# Advanced Mutable Memory System (AMMS)
+# Advanced Memory Management System (AMMS)
 
 **AMMS** is a simplified memory management system implemented in C, inspired by the borrow checker principles of Rust. It provides an intuitive way to handle mutable and immutable borrows of objects, ensuring safe memory access and automatic memory management through reference counting.
 
