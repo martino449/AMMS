@@ -49,4 +49,4 @@ To use AMMS in your project, simply include the header file and link against the
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/martino449/AMMS/edit/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/martino449/AMMS/blob/main/LICENSE).
